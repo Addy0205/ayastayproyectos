@@ -86,7 +86,7 @@ p {
     transform: scale(1.8);
 }
 .contenedor {
-    background-image: url(../imagenes/fondo1.jpg);
+    background-image: url(fondo1.jpg);
     background-attachment:fixed;
     min-height: 300px;
     display: grid;
@@ -233,7 +233,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../imagenes/finalromasa.jpg);
+    background-image: url(finalromasa.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
