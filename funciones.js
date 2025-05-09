@@ -58,8 +58,8 @@ registroExitoso();
 
 let imagenIndex = 0;
 let imagenIndex2 = 0;
-const imagenes = ['imagenes/trabajadores.jpg', 'imagenes/trabajadores3.jpg', 'imagenes/trabajadores2.jpg'];
-const imagenes2 = ['imagenes/romasa.jpg', 'imagenes/imagen2.jpg', '/imagenes/imagen3.jpg']
+const imagenes = ['trabajadores.jpg', 'trabajadores3.jpg', 'trabajadores2.jpg'];
+const imagenes2 = ['romasa.jpg', 'imagen2.jpg', 'imagen3.jpg']
 
 function cambiarImagen(direccion) {
 imagenIndex += direccion;
