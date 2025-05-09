@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AYASTA DISEÑO & PROYECTOS</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css">	
+<link href="imagenes/Arojo.png" rel="icon" type="image/png">
+<script src="js/funciones.js"></script>
+</head>
+<body onload="actReloj()">
+<header>
+ <div class="reloj" id="reloj">un reloj putual</div>
+ <div id="banner-principal">  
+<!-------Primera division----->
+  <div class="logo">
+    <img src="imagenes/logod.png" alt="logo en forma de A amarillo" width="310" height="200">
+  </div>
+<!-----TITULO EN EL BANNER--->
+  <div class="titulo">
+   <h2>HACEMOS REALIDAD<br>TUS IDEAS</h2><br><hr>
+   <p>Estilo y calidad</p>  
+  </div>
+  <div id="social" class="social">
+    <ul>
+      <li><a href="https://www.instagram.com/ayastadyp?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><img src="imagenes/logoig.png" width="10" height="10"></a></li>
+      <li><a href="https://wa.me/51930876766" target="_blank"><img src="imagenes/logowsp.png" width="10" height="10" style="transform: scale(2);"></a></li>
+      <li><a href="https://www.facebook.com/proggettos.keramikos"><img src="imagenes/email.png" width="10" height="10" style="transform: scale(1.8)"></a></li>
+      <li><a href="https://www.facebook.com/proggettos.keramikos"><img src="imagenes/fb.png" width="10" height="10" style="transform: scale(2.6)"></a></li>
+    </ul>
+   </div>
+ </div>
+ <!------MENU DE NAVEGACION ----->
+ <nav id="menu" class="menu">
+   <ul>   
+      <li><a href="#">¿QUIÉNES SOMOS?</a></li>
+   </ul>
+ </nav>
+
+</header>
+<!-------3CAJAS------>
+<div class="contenedor">
+  <div id="caja1" class="caja">
+    <h4>Nuestros Servicios</h4>
+    <ul>
+      <li>Planos</li>
+      <li>Modelados-3D</li>
+      <li>Drywall</li>
+      <li>Melamina</li>
+      <li>Ins-Electricas</li>
+      <li>Ins-Sanitarias</li>
+    </ul>
+  </div>
+  <div id="caja2" class="caja">
+      <h4>Nuestros trabajos</h4>
+      <ul>
+        <li><a href="">EXPODECO</a></li><br>
+        <li><a href="">MACOFER</a></li><br>
+        <li><a href="">ROMASA</a></li><br>
+        <li><a href="">RENOA</a></li><br>
+     </ul>
+  </div>
+  <div id="caja3" class="caja">
+      <h4>Antes y Después</h4>
+  </div>
+</div>
+<main>
+  <div class="contenedor2">
+    <div id="caja4" class="cajas">
+      <div class="titulo-imagen">
+        <h5>¿QUÉ TE OFRECEMOS?</h5>
+        <div class="carrusel">
+          <img id="imagenCarrusel" src="imagenes/trabajadores.jpg" alt="personal trabajando">
+          <div class="botones">
+            <button onclick="cambiarImagen(-1)">&#10094;</button>
+            <button onclick="cambiarImagen(1)">&#10095;</button>
+           </div>
+        </div>
+      </div>
+      <div class="parraf">
+      <p>En Ayasta Diseño & Proyectos,nos especializamos en crear espacios unicos y personalizados para hogares y locales comerciales.Nuestro equipo se encarga de transformar tus ideas en ambientes funcionales y estéticamente agradables, adaptandonos a tus necesidades y gustos.</p>
+      </div>
+    </div>
+    <div id="caja5" class="cajas">
+      <div class="parraf">
+      <p>Nos comprometemos a ofrecer un diseño que combina estilo con la más alta calidad, asegurando que cada detalle refleje la esencia de tu espacio y cumpla con los estándares más exigentes.</p>
+      </div>
+       <div class="titulo-imagen">
+        <h5>ESTILO Y CALIDAD</h5>
+        <div class="carrusel">
+          <video id="videocarrusel" controls autoplay loop src="imagenes/MACOFER.mp4"></video>
+          <div class="botones">
+            <button onclick="cambiarImagen(-1)">&#10094;</button>
+            <button onclick="cambiarImagen(1)">&#10095;</button>
+           </div>
+        </div>
+       </div>
+    </div>
+    <div id="caja6" class="cajas">
+      <div class="titulo-imagen">
+       <h5>PERSPECTIVA Y AVANCE</h5>
+        <div class="carrusel">
+         <img id="imagenCarrusel2" src="imagenes/romasa.jpg" alt="proyecto terminado">
+        <div class="botones">
+         <button onclick="cambiarImagen2(-1)">&#10094;</button>
+         <button onclick="cambiarImagen2(1)">&#10095;</button>
+       </div>
+      </div>
+      </div>
+      <div class="parraf">
+      <p>En Ayasta Diseño & Proyectos, creemos que la colaboración es clave. Por eso, nos comprometemos a mantener a nuestros clientes al tanto de cada avance, asegurando que su estilo y visión se reflejen en cada detalle del proyecto.</P>
+      </div>
+  </div>
+</main>
+<div class="contenedor3">
+  <div class="formulario">
+    <form onsubmit="checkemail(document.getElementById('correo').value); return false;"> 
+     <fieldset>
+     <legend>REGISTRATE</legend>
+      <label for="nombre" class="user">Ingresa tus nombres:</label>
+        <input type="text" id="nombre" onkeyup="calcLong(30, 'caracteres')">
+        <input type="hidden" id="caracteres" value="0">
+      <label for="apellido" class="user">Ingresa tus apellidos:</label>
+       <input type="text" id="apellido" onkeyup="calcLong(30, 'caracteres2')">
+       <input type="hidden"id="caracteres2" value="0">
+      <label for="email" class="correo">Ingresa tu correo:</label>
+       <input type="email" id="correo" required>
+        <button type="submit">REGISTRATE</button>
+     </fieldset>
+    </form>
+  </div>
+</div>
+<div id="footer">
+  <div class="txtfooter">
+    <p>Todos los derechos reservados &copy; 2024 Ayasta Diseño & Proyectos</p>
+  </div>
+</div>
+</body>
+</html>
+
+
+
+  
+

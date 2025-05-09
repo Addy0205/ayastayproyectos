@@ -1,0 +1,283 @@
+/* estilos.css */
+body {
+    margin: 0;
+    font-family:serif, sans-serif;
+    overflow-x: hidden;
+    background-color: #041e42;
+}
+
+/* cabezera */
+header {
+    background-color: rgba(0,0,0,0.6);
+    text-align: center;
+    padding: 5px;
+}
+#banner-principal {
+    padding:5px;
+    margin-top:0%;
+    display:flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.reloj {
+    font-size: 20px;
+    color: white;
+    font-style: italic;
+    position: absolute;
+    top: 70px;
+    right: 90px;
+}
+.logo {
+    margin-right: 1000px;
+    transform: scale(0.8);
+    margin-top: 0%;
+    margin-bottom: 1%;
+}
+.titulo {
+    margin-top: -200px;
+    color:white;
+    align-content: center;
+    padding: 5px;
+}
+h2 {
+    color:white;
+    font-size: 30px;
+    margin:0;
+}
+h4 {
+    font-size: 15px;
+    content: 20px;
+    color: black;
+    text-align: center;
+}
+hr {
+    margin-top: -10px;
+    height: 0.4px;
+    width: 15%;
+    background-color: white;
+}
+p {
+    font-size: 20px;
+    display: inline-block;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    top: 8px;
+}
+.menu li {
+    display: inline-block;
+    margin-left: 15px;
+    font-size: 20px;
+    margin-top: 0px;
+}
+.social {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    right: 20px;
+    top: 5px;
+}
+.social li {
+    display: inline-block;
+    margin-right: 50PX;
+}
+.social li img {
+    transform: scale(1.8);
+}
+.contenedor {
+    background-image: url(../imagenes/fondo1.jpg);
+    background-attachment:fixed;
+    min-height: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+}
+.contenedor2 {
+    background-color: white;
+    min-height: 900px;
+}
+.parraf {
+    text-align: justify;
+    padding: 20px;
+}
+.parraf p {
+    font-size: 15px;
+    margin: 0px;
+}
+.cajas {
+    background-color: white;
+    min-height: 300px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+#caja5 .parraf p {
+    padding: 10px;
+}
+.titulo-imagen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.carrusel img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    transform: scale(1.8);
+}
+.botones {
+    display: flex;
+    flex-direction:row;
+    position: relative;
+    top: 20%;
+    justify-content: space-between; 
+}
+.botones button:hover {
+    background-color: #3b536d;
+}
+
+.titulo-imagen img {
+    width: 200px;
+    height: auto;
+    border-radius: 15px;
+}
+.titulo-imagen video {
+    width: 200px;
+    height: auto;
+    border-radius: 15px;
+}
+#caja5 .parraf {
+    grid-column: 2 / 1;
+    padding-left: 20px;
+}
+#caja6 .titulo-imagen img {
+    width: 150px;
+    transform: scale(1.2);
+}
+h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
+#caja4 .titulo-imagen h5 {
+    margin-bottom: 50px;
+}
+.caja {
+    background-color: rgba(0,0,0,0.6);
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 10px;
+}
+#caja4 {
+    align-items: center;
+}
+#caja1 h4 {
+    color:white;
+}
+#caja2{
+    background-color: rgba(255,255,255,0.6);
+}
+#caja2 ul {
+    list-style-type: none;
+}
+#caja3 h4 {
+    color: white;
+}
+#caja1, #caja2 {
+    color:white;
+}
+#caja1 li {
+    margin-bottom: 20px;
+}
+nav {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin:0 15px;
+}
+
+nav ul li a {
+    color:white;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+#footer {
+    background-color:#F7AF39;
+    min-height: 1px;
+}
+.txtfooter {
+    color:black;
+    padding: 5px;
+    width: 100%;
+    align-content: center;
+    text-align: center;
+}
+.contenedor3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../imagenes/finalromasa.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 500px;
+  }
+  fieldset {
+    height: 350px;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+
+  }
+  .formulario {
+    background-color: rgba(4, 30, 66, 0.7);  
+    padding: 20px;
+    border-radius: 15px;
+    width: 300px; 
+  }
+  
+  label {
+    font-size: 14px;
+    color: white;
+  }
+  input[type="text"],
+  input[type="email"] {
+    padding: 10px;
+    font-size: 14px;
+    width: 100%; 
+    box-sizing: border-box; 
+    margin-top: 30px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  legend {
+    color:white;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  button {
+    background-color: none;
+    align-items: center;
+    margin-top: 5px;
+    text-align: center;
+  }
+  
